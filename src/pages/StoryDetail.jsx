@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { ArrowLeft, BookOpen, Star, Target, Volume2, Square, Pause, Play, Settings2 } from 'lucide-react';
 import { stories } from '../data/stories';
 import Icon from '../components/Icon';
+import { getBestVoice, getSortedVoices } from '../utils/audioUtils';
 import './StoryDetail.css';
 
 const StoryDetail = () => {
@@ -22,17 +23,19 @@ const StoryDetail = () => {
 
         const loadVoices = () => {
             const availableVoices = window.speechSynthesis.getVoices();
-            setVoices(availableVoices);
+            setVoices(getSortedVoices(availableVoices));
 
             // Try to load saved voice preference or default
             const savedVoiceName = localStorage.getItem('preferredVoice');
             if (savedVoiceName) {
                 const navVoice = availableVoices.find(v => v.name === savedVoiceName);
-                if (navVoice) setSelectedVoice(navVoice);
+                if (navVoice) {
+                    setSelectedVoice(navVoice);
+                } else {
+                    setSelectedVoice(getBestVoice(availableVoices));
+                }
             } else {
-                // Prefer a female voice or Google US English if available as a good default
-                const defaultVoice = availableVoices.find(v => v.name.includes('Google US English')) || availableVoices[0];
-                setSelectedVoice(defaultVoice);
+                setSelectedVoice(getBestVoice(availableVoices));
             }
         };
 

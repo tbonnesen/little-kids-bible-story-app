@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import StoryDetail from './pages/StoryDetail';
+import CharacterGallery from './pages/CharacterGallery';
+import BedtimeMode from './pages/BedtimeMode';
 import ThemeToggle from './components/ThemeToggle';
 import './App.css';
 
@@ -15,6 +17,8 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/story/:id" element={<StoryDetail />} />
+        <Route path="/characters" element={<CharacterGallery />} />
+        <Route path="/bedtime" element={<BedtimeMode />} />
       </Routes>
     </AnimatePresence>
   );

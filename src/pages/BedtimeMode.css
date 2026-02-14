@@ -1,0 +1,243 @@
+.bedtime-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #e2e8f0;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Stars background effect can be added here if needed */
+
+.bedtime-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bedtime-title {
+    font-family: 'Fredoka', cursive;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bedtime-subtitle {
+    font-family: 'Nunito', sans-serif;
+    color: #94a3b8;
+}
+
+/* Selection Mode */
+.playlist-selection {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-selector-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.story-checkbox-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.story-checkbox-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.story-checkbox-card.selected {
+    background: rgba(79, 172, 254, 0.2);
+    border-color: #4facfe;
+}
+
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #94a3b8;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.story-checkbox-card.selected .custom-checkbox {
+    background: #4facfe;
+    border-color: #4facfe;
+    color: white;
+}
+
+.story-info h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    color: #f1f5f9;
+}
+
+.story-info p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    color: #94a3b8;
+}
+
+.start-bedtime-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background: #ffd700;
+    color: #1e293b;
+    border: none;
+    border-radius: 9999px;
+    font-family: 'Fredoka', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.start-bedtime-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.start-bedtime-btn:disabled {
+    background: #475569;
+    color: #94a3b8;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Player Mode */
+.bedtime-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.now-playing-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.playing-icon-large {
+    margin-bottom: 2rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.playing-title {
+    font-family: 'Fredoka', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f8fafc;
+}
+
+.playing-subtitle {
+    font-family: 'Nunito', sans-serif;
+    color: #cbd5e1;
+    margin-bottom: 3rem;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.control-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.control-btn.play-pause {
+    width: 80px;
+    height: 80px;
+    background: #ffd700;
+    color: #1e293b;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.control-btn.play-pause:hover {
+    transform: scale(1.1);
+    background: #ffea00;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: #4facfe;
+    transition: width 0.1s linear;
+}
+
+.exit-bedtime-btn {
+    margin-top: 2rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #94a3b8;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.exit-bedtime-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
