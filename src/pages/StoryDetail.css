@@ -1,0 +1,292 @@
+.story-detail-container {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-overlay);
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-text);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    z-index: 50;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+}
+
+.story-header {
+    height: 50vh;
+    /* increased for better image view */
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align title to bottom */
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.story-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+}
+
+.story-icon-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.1));
+    position: relative;
+    z-index: 10;
+}
+
+.story-title-large {
+    font-family: 'Fredoka', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    position: relative;
+    z-index: 10;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: -3rem auto 0;
+    padding: 0 1.5rem 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.story-text-container {
+    background: var(--bg-card);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.story-paragraph {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.story-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.story-takeaways {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.takeaway-card {
+    background: var(--bg-card);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.takeaway-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card {
+    border-left: 6px solid #ff9a9e;
+}
+
+.lesson-card {
+    border-left: 6px solid #4facfe;
+}
+
+.takeaway-icon {
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.takeaway-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.takeaway-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+}
+
+.read-story-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: #ff6b6b;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 107, 107, 0.3);
+    transition: all 0.2s ease;
+    margin: 0;
+    width: fit-content;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.voice-selector-wrapper {
+    position: relative;
+}
+
+.voice-settings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.voice-settings-btn:hover {
+    background: var(--bg-overlay);
+    transform: rotate(45deg);
+}
+
+.voice-picker-popup {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 250px;
+    z-index: 100;
+}
+
+.voice-picker-popup label {
+    display: block;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.voice-select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--color-text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.voice-select:focus {
+    outline: 2px solid var(--color-secondary);
+}
+
+.read-story-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+    background: #ff5252;
+}
+
+.read-story-btn:active {
+    transform: translateY(0);
+}
+
+.read-story-btn.reading {
+    background: #ff9a9e;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 154, 158, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 154, 158, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 154, 158, 0);
+    }
+}
+
+@media (min-width: 768px) {
+    .story-title-large {
+        font-size: 4.5rem;
+    }
+
+    .story-text-container {
+        padding: 3rem;
+    }
+
+    .story-paragraph {
+        font-size: 1.5rem;
+    }
+
+    .story-takeaways {
+        grid-template-columns: 1fr 1fr;
+    }
+}

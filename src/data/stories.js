@@ -1,0 +1,766 @@
+export const stories = [
+    {
+        id: 1,
+        title: "God Made the World",
+        summary: "See how God created everything in 7 days!",
+        content: [
+            "In the beginning, there was nothing. No sun, no moon, no stars. Just God.",
+            "God said, 'Let there be light!' and bright light filled the sky.",
+            "Then God made the blue sky and the big oceans.",
+            "He made green grass, tall trees, and colourful flowers everywhere.",
+            "Wait! Who will see all this beauty? God made the sun for the day and the moon for the night.",
+            "He filled the oceans with swimming fish and the sky with flying birds.",
+            "Then came the animals! Lions, bears, bunnies, and puppies ran all over the earth.",
+            "Last of all, God made people. He made you and me to enjoy His beautiful world!",
+            "God looked at everything He made and said, 'It is very good!'"
+        ],
+        lesson: "God made everything because He loves us!",
+        value: "Creation",
+        icon: "Sun",
+        image: "/images/creation.png",
+        color: "#FFD700", // Gold
+        bgGradient: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)"
+    },
+    {
+        id: 2,
+        title: "Noah's Big Boat",
+        summary: "Animals two by two on a giant ark!",
+        content: [
+            "Noah loved God, but many people were not listening to God.",
+            "God told Noah, 'Build a big boat! A flood is coming.'",
+            "Noah listened. He built a huge ark out of wood.",
+            "Then God sent the animals! Two by two, they marched onto the boat. Lions, elephants, and tiny mice!",
+            "Rain began to fall. Drip, drop, splash! It rained for 40 days and 40 nights.",
+            "Water covered everything, but Noah and the animals were safe inside the ark.",
+            "Finally, the rain stopped. The sun came out!",
+            "God put a beautiful rainbow in the sky. It was a promise: 'I will never flood the earth again.'",
+            "Noah thanked God for keeping them safe."
+        ],
+        lesson: "God keeps his promises.",
+        value: "Obedience",
+        icon: "Ship",
+        image: "/images/noah.png",
+        color: "#4facfe", // Blue
+        bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+    },
+    {
+        id: 3,
+        title: "David and the Giant",
+        summary: "Can a little boy defeat a giant warrior?",
+        content: [
+            "David was a young shepherd boy. He took care of sheep.",
+            "But a big, scary giant named Goliath was teasing God's people.",
+            "Everyone was afraid of Goliath. He was huge! But David was not afraid.",
+            "David said, 'God is with me! I will fight the giant!'",
+            "David picked up five smooth stones from the river.",
+            "He put a stone in his sling and swung it round and round... ZOOM!",
+            "The stone hit Goliath right on the forehead!",
+            "BAM! The giant fell down! Thud!",
+            "David won because he trusted God to help him be brave.",
+            "Everyone cheered for David and thanked God."
+        ],
+        lesson: "With God, you can be brave!",
+        value: "Courage",
+        icon: "Shield",
+        image: "/images/david.png",
+        color: "#ff9a9e", // Red/Pink
+        bgGradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)"
+    },
+    {
+        id: 4,
+        title: "Jonah and the Whale",
+        summary: "A fishy tale about running away and coming back.",
+        content: [
+            "God told Jonah, 'Go to the city of Nineveh and tell them to be good.'",
+            "Jonah said, 'No way!' He ran away and got on a boat.",
+            "A big storm came. Whoosh! The waves were huge!",
+            "The sailors were scared. Jonah knew God sent the storm because he ran away.",
+            "Jonah jumped into the water to stop the storm.",
+            "GULP! A giant fish swallowed Jonah whole!",
+            "Jonah was inside the fish for three days. It was dark and smelly.",
+            "Jonah prayed, 'I'm sorry, God. I will listen.'",
+            "The fish spit Jonah out onto the dry land. BLECH!",
+            "Jonah went to Nineveh and told everyone about God's love."
+        ],
+        lesson: "It is always best to listen to God.",
+        value: "Forgiveness",
+        icon: "Fish",
+        image: "/images/jonah.png",
+        color: "#a18cd1", // Purple
+        bgGradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)"
+    },
+    {
+        id: 5,
+        title: "Baby Jesus is Born",
+        summary: "The very first Christmas story.",
+        content: [
+            "An angel told Mary she would have a special baby named Jesus.",
+            "Mary and Joseph traveled a long way to Bethlehem on a donkey.",
+            "It was crowded! There were no rooms at the inn.",
+            "An innkeeper said, 'You can sleep in the stable with the animals.'",
+            "That night, baby Jesus was born! Mary wrapped him in soft cloths.",
+            "She laid him in a manger, where the animals eat.",
+            "In the fields, angels appeared to shepherds. 'Good news! A Savior is born!'",
+            "A bright star shone in the sky, leading wise men to find the baby.",
+            "Everyone was happy. Jesus was God's gift to the world!"
+        ],
+        lesson: "Jesus is the greatest gift of all.",
+        value: "Love",
+        icon: "Star",
+        image: "/images/baby_jesus.png",
+        color: "#84fab0", // Green
+        bgGradient: "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)"
+    },
+    {
+        id: 6,
+        title: "The Good Samaritan",
+        summary: "Who is your neighbor? A story about kindness.",
+        content: [
+            "Jesus told a story about a man who was hurt by bad people.",
+            "The man lay on the road, needing help.",
+            "A leader walked by but didn't stop. He crossed to the other side.",
+            "Another man walked by but didn't stop either.",
+            "Then a Samaritan man came. People thought Samaritans were not friendly.",
+            "But this man stopped! He felt sorry for the hurt man.",
+            "He put bandages on his boo-boos and took him to a safe place.",
+            "He paid for the man to have food and a bed.",
+            "Jesus asked, 'Who was the good neighbor?' The one who showed kindness."
+        ],
+        lesson: "Be kind to everyone you meet.",
+        value: "Kindness",
+        icon: "Heart",
+        image: "/images/good_samaritan.png",
+        color: "#fda085", // Orange
+        bgGradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
+    },
+    {
+        id: 7,
+        title: "Adam and Eve's Garden",
+        summary: "A beautiful home filled with yummy fruit!",
+        content: [
+            "God made a special garden called Eden for Adam and Eve.",
+            "It was full of beautiful trees and yummy fruit.",
+            "God also made lots of friendly animals for them to play with.",
+            "God told them, 'You can eat from any tree except one.'",
+            "One day, a sneaky snake told Eve to eat the forbidden fruit.",
+            "Eve ate it, and then Adam ate it too. Uh oh!",
+            "They had to protect the garden, but they didn't listen to God.",
+            "God was sad, but He still loved them very much."
+        ],
+        lesson: "We show love by obeying God.",
+        value: "Obedience",
+        icon: "Leaf",
+        image: "/images/eden.png",
+        color: "#66bb6a",
+        bgGradient: "linear-gradient(135deg, #66bb6a 0%, #a5d6a7 100%)"
+    },
+    {
+        id: 8,
+        title: "Moses Parts the Sea",
+        summary: "Walking through water on dry land!",
+        content: [
+            "Moses was leading God's people out of Egypt.",
+            "But wait! They came to a huge ocean, the Red Sea.",
+            "The people were scared. 'We can't swim across!'",
+            "God told Moses, 'Hold up your staff!'",
+            "Moses did, and WHOOSH! The wind blew hard.",
+            "The water split apart! One wall of water on the left, one on the right.",
+            "The people walked across on dry ground! Amazing!",
+            "God made a safe path when there was no way."
+        ],
+        lesson: "Trust God to make a way.",
+        value: "Trust",
+        icon: "Waves",
+        image: "/images/moses.png",
+        color: "#29b6f6",
+        bgGradient: "linear-gradient(135deg, #29b6f6 0%, #81d4fa 100%)"
+    },
+    {
+        id: 9,
+        title: "The Walls of Jericho",
+        summary: "Marching and shouting makes walls fall down!",
+        content: [
+            "Joshua and his friends needed to enter the city of Jericho.",
+            "But Jericho had huge, tall walls. Nobody could get in.",
+            "God had a strange plan. He said, 'March around the city!'",
+            "For six days, they marched silently. Shhh...",
+            "On the seventh day, they marched seven times.",
+            "Then the priests blew their trumpets. TOOT TOOT!",
+            "Joshua shouted, 'SHOUT FOR THE LORD!'",
+            "CRASH! The big walls fell flat!",
+            "God fought the battle for them."
+        ],
+        lesson: "God is stronger than any wall.",
+        value: "Strength",
+        icon: "Castle",
+        image: "/images/jericho.png",
+        color: "#ff7043",
+        bgGradient: "linear-gradient(135deg, #ff7043 0%, #ffab91 100%)"
+    },
+    {
+        id: 10,
+        title: "Daniel and the Lions",
+        summary: "Safe in a den of hungry lions.",
+        content: [
+            "Daniel loved God and prayed three times every day.",
+            "Some mean men didn't like that. They tricked the King.",
+            "The King threw Daniel into a deep pit full of lions!",
+            "The lions were big and hungry. ROAR?",
+            "No! The lions acted like kitty cats. God sent an angel to shut their mouths.",
+            "In the morning, the King called out, 'Daniel, are you safe?'",
+            "Daniel shouted, 'Yes! God saved me!'",
+            "The King was so happy and told everyone to pray to Daniel's God."
+        ],
+        lesson: "God protects those who love Him.",
+        value: "Protection",
+        icon: "Cat",
+        image: "/images/daniel.png",
+        color: "#fea500",
+        bgGradient: "linear-gradient(135deg, #ffa726 0%, #ffcc80 100%)"
+    },
+    {
+        id: 11,
+        title: "Joseph's Colorful Coat",
+        summary: "A special rainbow coat for a special boy.",
+        content: [
+            "Joseph had 11 brothers, but his dad loved him very much.",
+            "His dad gave him a special gift: a coat of many colors!",
+            "Red, blue, green, yellow... it was beautiful!",
+            "Joseph's brothers were jealous. They were mean to him.",
+            "They sent Joseph far away to Egypt.",
+            "But God was with Joseph everywhere he went.",
+            "Even when things were hard, Joseph trusted God.",
+            "One day, Joseph became a great leader and saved his family from hunger."
+        ],
+        lesson: "God has a good plan for you.",
+        value: "Hope",
+        icon: "Palette",
+        image: "/images/joseph.png",
+        color: "#ce93d8",
+        bgGradient: "linear-gradient(135deg, #ce93d8 0%, #f48fb1 100%)"
+    },
+    {
+        id: 12,
+        title: "Lunch for 5,000",
+        summary: "Sharing a little lunch to feed a huge crowd.",
+        content: [
+            "Huge crowds followed Jesus to hear his stories.",
+            "It was getting late, and everyone was hungry. Rumble, rumble!",
+            "A little boy had a lunch box. He had five loaves of bread and two fish.",
+            "He shared his lunch with Jesus.",
+            "Jesus thanked God for the food and broke it into pieces.",
+            "A miracle happened! The food multiplied!",
+            "Everyone ate until they were full. There were even leftovers!",
+            "Jesus showed that sharing small things brings big blessings."
+        ],
+        lesson: "Always share what you have.",
+        value: "Sharing",
+        icon: "Utensils",
+        image: "/images/loaves.png",
+        color: "#81c784",
+        bgGradient: "linear-gradient(135deg, #81c784 0%, #a5d6a7 100%)"
+    },
+    {
+        id: 13,
+        title: "Zacchaeus in the Tree",
+        summary: "A short man meets Jesus in a surprising place.",
+        content: [
+            "Zacchaeus was a wee little man. He was very short.",
+            "He wanted to see Jesus, but the crowd was too tall.",
+            "He had an idea! He climbed up a sycamore tree.",
+            "Jesus walked by and looked up. 'Zacchaeus, come down!'",
+            "Jesus said, 'I'm coming to your house today.'",
+            "Zacchaeus was so happy! He told Jesus he was sorry for his mistakes.",
+            "He promised to be kind and give back money he took.",
+            "Jesus helps us change our hearts."
+        ],
+        lesson: "Jesus loves everyone, big or small.",
+        value: "Change",
+        icon: "TreeDeciduous",
+        image: "/images/zacchaeus.png",
+        color: "#dce775",
+        bgGradient: "linear-gradient(135deg, #dce775 0%, #fff176 100%)"
+    },
+    {
+        id: 14,
+        title: "Walking on Water",
+        summary: "Peter steps out of the boat onto the waves!",
+        content: [
+            "The disciples were in a boat at night. The wind was blowing hard.",
+            "Suddenly, they saw someone walking on the water! Is it a ghost?",
+            "No! It's Jesus! He said, 'Do not be afraid.'",
+            "Peter said, 'Lord, let me come to you.'",
+            "Peter stepped out of the boat. Splash? No! He walked on water too!",
+            "But then he looked at the big waves and got scared. He started to sink.",
+            "Jesus reached out his hand and caught him. 'Why did you doubt?'",
+            "Together, they climbed back into the boat."
+        ],
+        lesson: "Keep your eyes on Jesus.",
+        value: "Faith",
+        icon: "Footprints",
+        image: "/images/water.png",
+        color: "#4dd0e1",
+        bgGradient: "linear-gradient(135deg, #4dd0e1 0%, #b2ebf2 100%)"
+    },
+    {
+        id: 15,
+        title: "The Lost Sheep",
+        summary: "One little sheep is lost, but the Shepherd finds him.",
+        content: [
+            "A shepherd had 100 sheep. Baa! Baa!",
+            "One day, he counted them. 97, 98, 99... oh no! One was missing!",
+            "Did he stay with the 99 safe sheep? No!",
+            "He went out into the dark night to find the one lost sheep.",
+            "He looked over hills and in valleys.",
+            "Taking a big breath, he heard a small 'Baa'.",
+            "He found the sheep! He was so happy he carried it home on his shoulders.",
+            "He called his friends, 'Let's celebrate! I found my lost sheep!'"
+        ],
+        lesson: "You are special to God.",
+        value: "Love",
+        icon: "Search",
+        image: "/images/the_lost_sheep.png",
+        color: "#fff59d",
+        bgGradient: "linear-gradient(135deg, #fff59d 0%, #fff9c4 100%)"
+    },
+    {
+        id: 16,
+        title: "Jesus the King",
+        summary: "Waving palm branches for the King.",
+        content: [
+            "Jesus was coming to the city of Jerusalem.",
+            "He didn't ride a big war horse. He rode a gentle donkey.",
+            "People were so excited! They shouted 'Hosanna!'",
+            "They cut palm branches from trees and waved them.",
+            "They even put their coats on the road like a red carpet.",
+            "Everyone treated Jesus like a King.",
+            "Ideally, Jesus is the King of our hearts too."
+        ],
+        lesson: "Jesus is our King.",
+        value: "Worship",
+        icon: "Leaf",
+        image: "/images/jesus_the_king.png",
+        color: "#aed581",
+        bgGradient: "linear-gradient(135deg, #aed581 0%, #c5e1a5 100%)"
+    },
+    {
+        id: 17,
+        title: "The Tower of Babel",
+        summary: "A tower too tall and many languages.",
+        content: [
+            "A long time ago, everyone spoke the same language.",
+            "They said, 'Let's build a tower that reaches the sky!'",
+            "They wanted to be famous and forgot about God.",
+            "God saw their pride and knew it was not good.",
+            "So, God mixed up their words. 'Hola!' 'Bonjour!' 'Hello!'",
+            "They couldn't understand each other anymore.",
+            "They stopped building and moved to different places.",
+            "It's better to listen to God than to try to be famous."
+        ],
+        lesson: "Put God first, not yourself.",
+        value: "Humility",
+        icon: "MessageCircle",
+        image: "/images/tower_of_babel.png",
+        color: "#90caf9",
+        bgGradient: "linear-gradient(135deg, #90caf9 0%, #e3f2fd 100%)"
+    },
+    {
+        id: 18,
+        title: "Abraham's Shiny Stars",
+        summary: "Counting stars and trusting God's promise.",
+        content: [
+            "Abraham was an old man with no children.",
+            "But God gave him a big promise.",
+            "God showed him the night sky. 'Look up!'",
+            "See all those sparkly stars? You can't even count them!",
+            "God said, 'You will have a family as big as the stars.'",
+            "Abraham believed God, even though it seemed impossible.",
+            "God kept his promise, and Abraham became a dad.",
+            "God's promises always come true."
+        ],
+        lesson: "Believe in God's big promises.",
+        value: "Trust",
+        icon: "Star",
+        image: "/images/abrahams_shiny_stars.png",
+        color: "#b39ddb",
+        bgGradient: "linear-gradient(135deg, #b39ddb 0%, #ede7f6 100%)"
+    },
+    {
+        id: 19,
+        title: "Jacob's Ladder Dream",
+        summary: "Angels going up and down to heaven.",
+        content: [
+            "Jacob was on a long trip. He was very tired.",
+            "He used a stone for a pillow and fell asleep.",
+            "He had an amazing dream!",
+            "He saw a ladder reaching all the way to heaven.",
+            "Angels were climbing up and down the ladder.",
+            "God stood at the top and said, 'I am with you.'",
+            "When Jacob woke up, he said, 'God is in this place!'",
+            "He knew he was never alone."
+        ],
+        lesson: "God is always with you.",
+        value: "Presence",
+        icon: "Cloud",
+        image: "/images/jacobs_ladder_dream.png",
+        color: "#80cbc4",
+        bgGradient: "linear-gradient(135deg, #80cbc4 0%, #e0f2f1 100%)"
+    },
+    {
+        id: 20,
+        title: "Baby Moses in the Basket",
+        summary: "A tiny baby floating safely on the river.",
+        content: [
+            "A mean king wanted to hurt baby boys.",
+            "Moses' mommy hid him in a basket boat.",
+            "She put the basket in the river reeds.",
+            "Moses' sister, Miriam, watched from nearby.",
+            "The princess found the basket! 'A baby!'",
+            "She loved him and decided to keep him safe.",
+            "Miriam brought Moses' mommy to help.",
+            "God had a special plan to keep Moses safe."
+        ],
+        lesson: "God watches over little ones.",
+        value: "Safety",
+        icon: "Baby",
+        image: "/images/baby_moses_basket.png",
+        color: "#fff176",
+        bgGradient: "linear-gradient(135deg, #fff176 0%, #fff9c4 100%)"
+    },
+    {
+        id: 21,
+        title: "The Burning Bush",
+        summary: "A bush on fire that didn't burn up!",
+        content: [
+            "Moses was watching sheep on a mountain.",
+            "He saw a bush on fire. Crackle, pop!",
+            "But the bush didn't burn up. It was strange!",
+            "God spoke from the bush: 'Moses! Take off your shoes.'",
+            "This was holy ground. God had a big job for Moses.",
+            "'Go save my people from the mean king.'",
+            "Moses was scared, but God said, 'I will be with you.'",
+            "Moses listened and went to help."
+        ],
+        lesson: "Listen when God speaks.",
+        value: "Holiness",
+        icon: "Flame",
+        image: "/images/the_burning_bush.png",
+        color: "#ff8a65",
+        bgGradient: "linear-gradient(135deg, #ff8a65 0%, #ffccbc 100%)"
+    },
+    {
+        id: 22,
+        title: "Ten Good Rules",
+        summary: "Rules to help us live happy lives.",
+        content: [
+            "God loves us and wants us to be happy.",
+            "So He gave Moses ten good rules on stone tablets.",
+            "Rule 1: Love God most of all.",
+            "Rule 5: Listen to your mom and dad.",
+            "Rule 8: Don't take things that aren't yours.",
+            "These rules are like guardrails on a road.",
+            "They keep us safe and help us love others.",
+            "Following God's rules shows we love Him."
+        ],
+        lesson: "God's rules protect us.",
+        value: "Obedience",
+        icon: "Scroll",
+        image: "/images/ten_good_rules.png",
+        color: "#a1887f",
+        bgGradient: "linear-gradient(135deg, #a1887f 0%, #d7ccc8 100%)"
+    },
+    {
+        id: 23,
+        title: "The Talking Donkey",
+        summary: "Even a donkey knows to listen to God.",
+        content: [
+            "Balaam was riding his donkey on a trip.",
+            "An angel stood in the road with a sword.",
+            "Balaam couldn't see the angel, but the donkey could!",
+            "The donkey stopped. Balaam got mad. 'Go!'",
+            "Suddenly, the donkey spoke! 'Why are you hitting me?'",
+            "Balaam was shocked! A talking donkey?",
+            "Then God let Balaam see the angel.",
+            "Balaam learned to look for God in surprising places."
+        ],
+        lesson: "God can speak through anything.",
+        value: "Listening",
+        icon: "Ear",
+        image: "/images/the_talking_donkey.png",
+        color: "#9575cd",
+        bgGradient: "linear-gradient(135deg, #9575cd 0%, #d1c4e9 100%)"
+    },
+    {
+        id: 24,
+        title: "Gideon's Tiny Army",
+        summary: "Winning with trumpets and jars.",
+        content: [
+            "Gideon had too many soldiers for the battle.",
+            "God said, 'Send them home! I want to show my power.'",
+            "Gideon kept only 300 men. That's tiny!",
+            "God gave them a strange plan: Trumpets and jars with lights.",
+            "At night, they broke the jars (SMASH!) and blew horns (TOOT!).",
+            "The bad guys were so scared they ran away!",
+            "Gideon won without even fighting.",
+            "God is stronger than any big army."
+        ],
+        lesson: "With God, you are strong.",
+        value: "Strength",
+        icon: "Shield",
+        image: "/images/gideons_tiny_army.png",
+        color: "#81d4fa",
+        bgGradient: "linear-gradient(135deg, #81d4fa 0%, #e1f5fe 100%)"
+    },
+    {
+        id: 25,
+        title: "Samson the Strong Man",
+        summary: "Muscles from God to help people.",
+        content: [
+            "Samson was the strongest man ever.",
+            "He could lift heavy gates and fight lions.",
+            "His strength came from a promise to God.",
+            "But Samson forgot to pray and made mistakes.",
+            "He lost his strength for a while.",
+            "Then he prayed, 'God, please help me one last time.'",
+            "God gave him strength again to save his people.",
+            "Real strength comes from trusting God."
+        ],
+        lesson: "God gives us strength.",
+        value: "Power",
+        icon: "Zap",
+        image: "/images/samson_strong_man.png",
+        color: "#ffd54f",
+        bgGradient: "linear-gradient(135deg, #ffd54f 0%, #ffecb3 100%)"
+    },
+    {
+        id: 26,
+        title: "Ruth's Best Friend",
+        summary: "Staying together no matter what.",
+        content: [
+            "Ruth and Naomi were best friends.",
+            "Naomi was sad and decided to move back home.",
+            "She told Ruth, 'You should stay here.'",
+            "But Ruth said, 'No! Where you go, I will go.'",
+            "Ruth stayed by Naomi's side and helped her pick grain.",
+            "Because Ruth was so loyal, God blessed her.",
+            "She found a new family and was very happy.",
+            "Being a good friend is a special gift."
+        ],
+        lesson: "A true friend sticks close.",
+        value: "Loyalty",
+        icon: "Wheat",
+        image: "/images/ruth_friend.png",
+        color: "#ffcca0",
+        bgGradient: "linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)"
+    },
+    {
+        id: 27,
+        title: "Samuel Hears God",
+        summary: "A little boy listens in the night.",
+        content: [
+            "Samuel was a little boy living in the temple.",
+            "One night, he heard a voice: 'Samuel!'",
+            "He ran to the priest, Eli. 'Here I am!'",
+            "Eli said, 'I didn't call you. Go back to bed.'",
+            "It happened again! 'Samuel!'",
+            "Eli knew it was God. He said, 'Say, Speak Lord, I am listening.'",
+            "Samuel listened, and God told him special things.",
+            "Even kids can hear from God."
+        ],
+        lesson: "Listen for God's voice.",
+        value: "Listening",
+        icon: "Ear",
+        image: "/images/samuel_hears_god.png",
+        color: "#a5d6a7",
+        bgGradient: "linear-gradient(135deg, #a5d6a7 0%, #c8e6c9 100%)"
+    },
+    {
+        id: 28,
+        title: "Elijah and the Birds",
+        summary: "Hungry birds bringing dinner!",
+        content: [
+            "Elijah was God's messenger, but he had to hide.",
+            "He sat by a quiet stream, alone and hungry.",
+            "God didn't forget him.",
+            "Every morning and night, big black birds flew down.",
+            "They brought bread and meat for Elijah to eat!",
+            "Yum! God used birds to serve dinner.",
+            "Elijah drank from the stream and was full.",
+            "God always takes care of us."
+        ],
+        lesson: "God provides what we need.",
+        value: "Provision",
+        icon: "Bird",
+        image: "/images/elijah_birds.png",
+        color: "#90a4ae",
+        bgGradient: "linear-gradient(135deg, #90a4ae 0%, #cfd8dc 100%)"
+    },
+    {
+        id: 29,
+        title: "Fire Horses for Elisha",
+        summary: "A hidden army of angels.",
+        content: [
+            "Elisha's servant woke up and saw an enemy army.",
+            "'Oh no!' he cried. 'We are trapped!'",
+            "Elisha wasn't scared. He prayed, 'God, open his eyes.'",
+            "Suddenly, the servant saw something amazing!",
+            "The hills were full of horses and chariots of fire!",
+            "God's angel army was all around them.",
+            "There were more on their side than the enemy.",
+            "God fights for us, even when we can't see it."
+        ],
+        lesson: "God is always protecting us.",
+        value: "Protection",
+        icon: "Flame",
+        image: "/images/elisha_fire_horses.png",
+        color: "#ffab91",
+        bgGradient: "linear-gradient(135deg, #ffab91 0%, #ffccbc 100%)"
+    },
+    {
+        id: 30,
+        title: "The Brave Queen Esther",
+        summary: "Speaking up to save her people.",
+        content: [
+            "Esther was a beautiful queen, but she had a secret.",
+            "A bad man wanted to hurt her people.",
+            "She was scared to talk to the King without permission.",
+            "But her uncle said, 'Maybe you are queen for this exact moment.'",
+            "Esther was brave. She asked everyone to pray.",
+            "She went to the King, and he smiled at her.",
+            "She saved her people because she was brave!",
+            "God puts us in the right place at the right time."
+        ],
+        lesson: "Be brave and do what is right.",
+        value: "Bravery",
+        icon: "Crown",
+        image: "/images/queen_esther.png",
+        color: "#f48fb1",
+        bgGradient: "linear-gradient(135deg, #f48fb1 0%, #f8bbd0 100%)"
+    },
+    {
+        id: 31,
+        title: "The Fiery Furnace",
+        summary: "Three friends who wouldn't bow down.",
+        content: [
+            "Tree friends loved God: Shadrach, Meshach, and Abednego.",
+            "The King said, 'Bow down to my statue!'",
+            "They said, 'No! We only bow to God.'",
+            "The King was mad! He threw them into a hot fire.",
+            "But when the King looked, he saw FOUR men walking.",
+            "God was in the fire with them!",
+            "They walked out safe. Not even a hair was singed.",
+            "God is with us in scary times."
+        ],
+        lesson: "Stand strong for God.",
+        value: "Faithfulness",
+        icon: "Flame",
+        image: "/images/fiery_furnace.png",
+        color: "#ef5350",
+        bgGradient: "linear-gradient(135deg, #ef5350 0%, #ef9a9a 100%)"
+    },
+    {
+        id: 32,
+        title: "Jesus Gets Baptized",
+        summary: "A dove and a voice from heaven.",
+        content: [
+            "John was baptizing people in the river.",
+            "Jesus came and asked to be baptized too.",
+            "John said, 'But you are perfect!'",
+            "Jesus said, 'It is the right thing to do.'",
+            "When Jesus came out of the water, the sky opened.",
+            "God's Spirit came down like a dove.",
+            "God's voice said, 'This is my Son. I love him!'",
+            "God was very pleased with Jesus."
+        ],
+        lesson: "God loves His Son, Jesus.",
+        value: "Love",
+        icon: "Droplets",
+        image: "/images/jesus_baptized.png",
+        color: "#4fc3f7",
+        bgGradient: "linear-gradient(135deg, #4fc3f7 0%, #b3e5fc 100%)"
+    },
+    {
+        id: 33,
+        title: "Helping a Friend fit in",
+        summary: "Friends lowering a man through the roof!",
+        content: [
+            "Four friends had a friend who couldn't walk.",
+            "They wanted Jesus to heal him, but the house was full.",
+            "They climbed onto the roof. Clomp, clomp, clomp!",
+            "They made a hole in the roof and lowered their friend down.",
+            "Right in front of Jesus!",
+            "Jesus saw their faith and healed the man.",
+            "'Pick up your mat and walk!' And he did!",
+            "Good friends help each other find Jesus."
+        ],
+        lesson: "Bring your friends to Jesus.",
+        value: "Friendship",
+        icon: "HandHeart",
+        image: "/images/helping_friend.png",
+        color: "#ffb74d",
+        bgGradient: "linear-gradient(135deg, #ffb74d 0%, #ffe0b2 100%)"
+    },
+    {
+        id: 34,
+        title: "The Farmer's Seeds",
+        summary: "Seeds growing in good heart soil.",
+        content: [
+            "Jesus told a story about a farmer planting seeds.",
+            "Some seeds fell on the path and birds ate them.",
+            "Some fell on rocks and didn't grow deep.",
+            "Some fell in weeds and got stuck.",
+            "But some fell on good dirt!",
+            "They grew into big, strong plants with yummy fruit.",
+            "Our hearts are like the dirt. If we listen to God, we grow strong.",
+            "Let God's word grow in your heart."
+        ],
+        lesson: "Listen to God and grow.",
+        value: "Growth",
+        icon: "Sparkles",
+        image: "/images/farmers_seeds.png",
+        color: "#dce775",
+        bgGradient: "linear-gradient(135deg, #dce775 0%, #f0f4c3 100%)"
+    },
+    {
+        id: 35,
+        title: "The Lost Coin",
+        summary: "Sweeping the whole house for one coin.",
+        content: [
+            "A lady had 10 silver coins. They were very special.",
+            "Oops! She lost one. Did she say 'Oh well'?",
+            "No! She lit a lamp and got a broom.",
+            "She swept every corner. Swish, swish, swish.",
+            "Clink! She found it!",
+            "She called her neighbors. 'I found my special coin!'",
+            "Jesus says God is like that lady.",
+            "He searches for everyone because we are precious."
+        ],
+        lesson: "You are precious to God.",
+        value: "Worth",
+        icon: "Coins",
+        image: "/images/lost_coin.png",
+        color: "#cfd8dc",
+        bgGradient: "linear-gradient(135deg, #cfd8dc 0%, #eceff1 100%)"
+    },
+    {
+        id: 36,
+        title: "Yummy Fruit of Spirit",
+        summary: "Good things growing inside us.",
+        content: [
+            "Apple trees grow apples. Orange trees grow oranges.",
+            "What do people grow?",
+            "When we love God, His Spirit helps us grow good fruit.",
+            "Not apples or bananas, but special inside fruit.",
+            "Love, Joy, Peace, Patience!",
+            "Kindness, Goodness, Faithfulness!",
+            "Gentleness and Self-control.",
+            "These make our lives sweet and beautiful to others."
+        ],
+        lesson: "Let God make you sweet.",
+        value: "Character",
+        icon: "Apple",
+        image: "/images/fruit_of_spirit.png",
+        color: "#f06292",
+        bgGradient: "linear-gradient(135deg, #f06292 0%, #f8bbd0 100%)"
+    }
+];

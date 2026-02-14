@@ -1,0 +1,125 @@
+.story-card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.story-card {
+  height: 100%;
+  border-radius: 1.5rem;
+  /* rounded-3xl */
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* shadow-lg */
+  border: 4px solid var(--bg-card);
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card-header {
+  height: 12rem;
+  /* h-48 increased from h-40 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-decoration {
+  position: absolute;
+  background-color: white;
+  opacity: 0.2;
+  border-radius: 9999px;
+  /* rounded-full */
+}
+
+.circle-top-left {
+  top: 0;
+  left: 0;
+  width: 5rem;
+  /* w-20 */
+  height: 5rem;
+  transform: translate(-50%, -50%);
+}
+
+.circle-bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 8rem;
+  /* w-32 */
+  height: 8rem;
+  transform: translate(30%, 30%);
+}
+
+.icon-wrapper {
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  /* drop-shadow-md */
+  z-index: 10;
+}
+
+.story-image-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-card-body {
+  padding: 1.5rem;
+  /* p-6 */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-badge-container {
+  margin-bottom: 0.5rem;
+  /* mb-2 */
+}
+
+.story-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  /* px-3 py-1 */
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  /* text-xs */
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  /* tracking-wide */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.story-title {
+  font-size: 1.25rem;
+  /* text-xl */
+  font-weight: 700;
+  color: var(--color-text);
+  /* text-gray-800 */
+  margin: 0 0 0.5rem 0;
+  font-family: 'Fredoka', sans-serif;
+  /* font-display */
+}
+
+.story-summary {
+  color: var(--color-text-secondary);
+  /* text-gray-600 */
+  font-size: 0.875rem;
+  /* text-sm */
+  line-height: 1.625;
+  /* leading-relaxed */
+  font-family: 'Nunito', sans-serif;
+  flex: 1;
+}
