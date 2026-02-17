@@ -230,32 +230,36 @@ export const characterData = {
         color: "#aed581"
     },
     "Friends": {
-        image: "/images/characters/disciples.png",
+        image: "/images/characters/friends.png",
         color: "#ffab91"
     },
     "Brothers": {
-        image: "/images/characters/disciples.png",
+        image: "/images/characters/brothers.png",
         color: "#ef9a9a"
     },
     "Servant": {
-        image: "/images/characters/boy.png",
+        image: "/images/characters/servant.png",
         color: "#b0bec5"
     },
     "Priests": {
-        image: "/images/characters/disciples.png",
+        image: "/images/characters/priests.png",
         color: "#e6ee9c"
     },
     "Innkeeper": {
-        image: "/images/characters/farmer.png",
+        image: "/images/characters/innkeeper.png",
         color: "#d7ccc8"
     },
     "Israelites": {
-        image: "/images/characters/disciples.png",
+        image: "/images/characters/israelites.png",
         color: "#b3e5fc"
     },
     "People": {
-        image: "/images/characters/disciples.png",
+        image: "/images/characters/people.png",
         color: "#ffcc80"
+    },
+    "Army": {
+        image: "/images/characters/army.png",
+        color: "#cfd8dc"
     },
     // Add more characters here as we generate images
     "God": {
